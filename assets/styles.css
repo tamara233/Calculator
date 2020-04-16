@@ -1,0 +1,60 @@
+body, #root {
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#table-main {
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    border: 1px solid black;
+}
+#table-main, #numberInput input, tr, td, th {
+    border: 0.5px solid black;
+}
+#table-main, #numberInput input {
+    width: 500px;
+}
+tr, td, th {
+    height: 40px;
+    font-size: 25px;
+}
+
+#table-main thead {
+    background: #000000;
+    color: #fff;
+    font-weight: 400;
+    text-align: right;
+}
+#numberInput input {
+    height: 70;
+    font-size: 17px;
+    background: #171717;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+}
+.equals {
+    background-color: #008000;
+}
+.clear {
+    background-color: #ff0000;
+}
+th, th input{
+    background-color:#f7892b;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-weight: 600;
+}
+td input, th input {
+    background: inherit;
+    width: inherit;
+    border: none;
+    font-size: 19px;
+}
+input:focus{
+    outline: none;
+}
