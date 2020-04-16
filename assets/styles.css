@@ -39,7 +39,7 @@ tr, td, th {
 .equals {
     background-color: #008000;
 }
-.clear {
+#clear {
     background-color: #ff0000;
 }
 th, th input{
