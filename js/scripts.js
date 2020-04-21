@@ -3,7 +3,7 @@ const operators = [ '+', '-', '*', '/' ];
 
 function display(n) {
     let d = displayNum.value = displayNum.value + n
-    console.log('val', d, displayNum.value)
+    console.log('val', displayNum.value)
 
     //clear the number display
     if (n === 'c') {
@@ -21,15 +21,15 @@ function display(n) {
             item.disabled = false;
         }
         //prevent outputting multiple operators
-        if (operators.includes(d[d.length - 1])){
-            //if (item.value == n) {
+        if (operators.includes(d[d.length - 1])){            
+            if (item.value == n) {
              item.disabled = true;
-            //}
-            //  else {
-            //     let minusLast = displayNum.value.substring(0, displayNum.value.length - 1)
-            //     displayNum.value = minusLast.substring(0, displayNum.value.length - 1) + n
-            //     console.log('from else',displayNum.value, 'minus last: ', displayNum.value.substring(0, displayNum.value.length - 1), 'current: ', n)
-            // }
+            }
+            //allow changing operator
+             else if (operators.includes(d[d.length - 2])) {
+                displayNum.value = displayNum.value.substring(0, displayNum.value.length - 2) + n
+            return
+            }
         }    
     }
     
